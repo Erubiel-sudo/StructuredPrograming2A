@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <studio.h> //atoi, atof//
-#include <string> // strcpy //
+#include <stdlib.h> //atoi, atof//
+#include <string.h> // strcpy // 
 
 
 int my_int = 0; // %i o %d
-float my_float = 3.14; //  %f
-char my_char = 'c'; // %c
-char my_str[10] = "hola"; //%s
+float my_float  =  3.14; //  %f
+char my_char  = 'c';  // %c
+char my_str[10] =  "hola"; //%s
 
 
-float second_float = 0.0
+float second_float = 0.0; 
 // Pointer //
 int* my_ptr_int = &my_int; // %p
 
@@ -25,5 +25,5 @@ int main( int argc,  char** argv){
         printf( "my_int: %i, my_float: %f, my_char: %c,  my_str: %s, my_ptr_int: %p.\n", my_int, my_float, my_char, my_str, my_ptr_int);
         printf( "argc: %i, element 1: %d,  elem 2 : %s  char: %c   \n",argc, base * altura,  argv[2], 'L' );
 
-        retutn 0;
+        return 0;
 }
