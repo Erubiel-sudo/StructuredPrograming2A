@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "./utils.h"
+#include "/mnt/c/Users/Erubiel Tun/Documents/StructuredPrograming2A/unit2/utils.h"
 
 int myNumber =3;
 float myFloat = 3.1416;
