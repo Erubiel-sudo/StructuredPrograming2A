@@ -47,3 +47,11 @@ void modifyVariablesAddress( int* dir1  , int* dir2, int multiplo ){
     return;
 }
 
+///SWAP EN C//
+void swapF (int* a, int*b){
+    int n3;
+    n3 = *a;
+    *a = *b;
+    *b = n3;
+    return;
+}
