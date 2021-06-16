@@ -20,3 +20,30 @@ int addTwoNumbers( int argumento1  , int argumento2  ){
     return result;
 }
 
+
+//Paso de argumentos por valor//
+void modifyVariables( int argumento1, int argumento2  ){
+
+    argumento1 = argumento1*2;
+    argumento2 = argumento2*2;
+    return;
+}
+
+void ShowIntAdress( int* param ){
+    printf( "addres: %p\n", param );
+}
+void ShowIntValueAdress( int* param ){
+    printf("value: %i\n", *param );
+}
+
+void modifyVariablesAddress( int* dir1  , int* dir2, int multiplo ){
+    ShowIntAdress(dir1);
+    ShowIntValueAdress(dir1);
+    ShowIntAdress(dir2);
+    ShowIntValueAdress(dir2);
+    *dir1 = *dir1 * multiplo;
+    *dir2 = *dir2 * multiplo;
+
+    return;
+}
+
