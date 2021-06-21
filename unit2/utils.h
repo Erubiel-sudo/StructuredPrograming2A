@@ -55,3 +55,19 @@ void swapF (int* a, int*b){
     *b = n3;
     return;
 }
+
+void fillArray( int array[], size_t tam ){
+    for (size_t i = 0; i < tam; i++)
+    {
+        array[i] = i*5 ; 
+    }
+    return;
+};
+
+void printArray1D( int array[], size_t tam ){
+    for (size_t i = 0; i < tam; i++)
+    {
+        printf("%i\n", array[i] ); 
+    }
+    return;
+};
