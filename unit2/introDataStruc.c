@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdio.h>
-
 #include "./utils.h"
 
 //arrays
 int myIntArray[5];
-
-
 
 int main(){
 
