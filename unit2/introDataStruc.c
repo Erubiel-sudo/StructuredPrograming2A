@@ -5,6 +5,8 @@
 
 //arrays
 int myIntArray[5];
+int myInt = 4;
+float myFloat = 3.1416;
 
 typedef struct mago{
 
