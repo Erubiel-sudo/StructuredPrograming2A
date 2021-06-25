@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define pi 3.1416
+
+typedef struct array
+{
+    int dirArray[5];
+}Array;
 
 
 int libInteger  =  24;
@@ -59,7 +65,7 @@ void swapF (int* a, int*b){
 void fillArray( int array[], size_t tam ){
     for (size_t i = 0; i < tam; i++)
     {
-        array[i] = i*5 ; 
+        array[i] = i*2 ; 
     }
     return;
 };
@@ -68,6 +74,18 @@ void printArray1D( int array[], size_t tam ){
     for (size_t i = 0; i < tam; i++)
     {
         printf("%i\n", array[i] ); 
+
     }
     return;
-};
+}
+
+
+Array* aFunction( ){
+    //int unArreglo[5] = {1,5,6,7,8};
+    Array* unArrayType = (Array*)malloc(sizeof(Array) );
+    unArrayType->dirArray[0] = 17;
+    unArrayType->dirArray[1] = 15;
+    unArrayType->dirArray[2] = 19;
+    // unArrayType->dirArray[1] = 10;
+    return unArrayType;
+}
