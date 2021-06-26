@@ -5,7 +5,10 @@
 
 typedef struct array
 {
-    int dirArray[5];
+    int dirArray[2];
+    float aFloat;
+    float * aFloatPointer;
+
 }Array;
 
 
@@ -80,12 +83,12 @@ void printArray1D( int array[], size_t tam ){
 }
 
 
-Array* aFunction( ){
+Array* returnArray( ){
     //int unArreglo[5] = {1,5,6,7,8};
     Array* unArrayType = (Array*)malloc(sizeof(Array) );
+    printf ("adrress unArrayType: %p\n ", &unArrayType );
+
     unArrayType->dirArray[0] = 17;
     unArrayType->dirArray[1] = 15;
-    unArrayType->dirArray[2] = 19;
-    // unArrayType->dirArray[1] = 10;
     return unArrayType;
 }

@@ -16,6 +16,9 @@ int main (){
     *pointerInt = 6;
     printf ("address myInt: %p,   myInt: %d \n",  &myInt, myInt  );
 
+    Array* myArray = returnArray(); 
+    printf( "%d\n", myArray->dirArray[1]  );
+
 
     
     return 0;
