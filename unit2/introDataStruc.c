@@ -14,6 +14,11 @@ typedef struct mago{
     int mana;
     char* nombre;
     //mas atributos//
+    //say Hello
+    void (*Saludo) (char message[]);
+    int (*sumaDosnumeros) (int argumento1, int argumento2);
+
+
 }Mago;
 
 
@@ -23,10 +28,12 @@ typedef struct mago{
 
 int main(){
 
-    Mago erubiel = { 100, 100, "Erubiel_T" };
+    Mago erubiel = { 100, 100, "Erubiel_T", sayHello, addTwoNumbers  };
     struct mago luis = {200, 200, "Luis"};
 
     printf("%s\n", erubiel.nombre  );
+    erubiel.Saludo("Hola soy un mago");
+    printf("%d\n", erubiel.sumaDosnumeros(20,25));
 
     fillArray( myIntArray, 5);
     printArray1D( myIntArray, 5 );
@@ -36,7 +43,7 @@ int main(){
     printf("%d", myIntArray[3] );
     printf("%d", myIntArray[4] );
 
-    Array* myArray = aFunction();
+    Array* myArray = returnArray();
     printf( "\n%d ", myArray->dirArray[0]);
     printf( "\n%d ", myArray->dirArray[1]);
     printf( "\n%d ", myArray->dirArray[2]);

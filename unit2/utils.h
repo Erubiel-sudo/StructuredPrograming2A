@@ -3,6 +3,15 @@
 
 #define pi 3.1416
 
+//objeto
+
+typedef struct utils {
+    int myInt;
+    void (*ShowIntAdress)( int* param );
+
+
+}UTILS;
+
 typedef struct array
 {
     int dirArray[2];
