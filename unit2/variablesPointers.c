@@ -10,6 +10,7 @@ float myFloat = 3.1416;
 int* pointerInt = &myInt;
 
 int main (){
+    
     printf ("address myInt: %p,   myInt: %d \n",  &myInt, myInt  );
     printf ("address myFloat: %p,  myFloat: %f \n ",  &myFloat,  myFloat);
     printf ("address pointerInt: %p, pointerInt: %p \n ", &pointerInt, pointerInt );
@@ -17,7 +18,7 @@ int main (){
     printf ("address myInt: %p,   myInt: %d \n",  &myInt, myInt  );
 
     Array* myArray = returnArray(); 
-    printf( "%d\n", myArray->dirArray[1]  );
+    printf( "%d \n", myArray->dirArray[1]  );
 
 
     
