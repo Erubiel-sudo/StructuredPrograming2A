@@ -86,7 +86,7 @@ void printArray1D( int array[], size_t tam ){
 Array* returnArray( ){
     //int unArreglo[5] = {1,5,6,7,8};
     Array* unArrayType = (Array*)malloc(sizeof(Array) );
-    printf ("adrress unArrayType: %p, unArrayType: %p \n ", &unArrayType, &unArrayType  );
+    printf ("adrress unArrayType: %p, unArrayType: %p \n ", &unArrayType, unArrayType  );
 
     unArrayType->dirArray[0] = 17;
     unArrayType->dirArray[1] = 15;
