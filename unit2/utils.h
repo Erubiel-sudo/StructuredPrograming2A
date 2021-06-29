@@ -101,3 +101,5 @@ Array* returnArray( ){
     unArrayType->dirArray[1] = 15;
     return unArrayType;
 }
+
+
