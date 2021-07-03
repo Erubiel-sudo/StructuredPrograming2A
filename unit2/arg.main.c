@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <studio.h> //atoi, atof//
+#include <stdio.h> //atoi, atof//
 #include <string> // strcpy //
 
 
