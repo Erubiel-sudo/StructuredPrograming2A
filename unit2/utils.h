@@ -8,7 +8,7 @@
 typedef struct utils {
     int myInt;
     void (*ShowIntAdress)( int* param );
-
+    void (*mySwap)(int* ptr1, int* ptr2);
 
 }UTILS;
 
@@ -72,6 +72,14 @@ void swapF (int* a, int*b){
     *a = *b;
     *b = n3;
     return;
+}
+
+void swap( int* ptr1, int* ptr2){
+        int temp = *ptr1; 
+        *ptr1 = *ptr2;
+        *ptr2 = temp;
+        return;
+        printf("Hola munda!");
 }
 
 void fillArray( int array[], size_t tam ){
