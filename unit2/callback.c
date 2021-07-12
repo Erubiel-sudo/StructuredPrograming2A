@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdio.h>
 #include "./utils.h"
 #include "stdbool.h"
 
@@ -9,7 +8,9 @@ void callToNumber(int number){
         printf("Llamando al %d...!\n", number   );
 }
 //Declarando
-void SecurityCamera( void (*callToNumber) (int number),  int  EmergencyNumber );
+void SecurityCamera( void (*cb) (int number),  int  EmergencyNumber );
+void SecurityCamera2();
+
 int main(){
         
         // for(;;){
@@ -19,11 +20,16 @@ int main(){
         return 0;
 }
 //Defi
-void SecurityCamera( void (*callToNumber) (int number), int EmergencyNumber   ){
+void SecurityCamera( void (*cb) (int number), int EmergencyNumber   ){
         //Logica Compleja//
         bool thief = false;
         if(thief){ //Si detecta ladron debe hacer algo!
                 // Ejecutar un calback
                 callToNumber(EmergencyNumber);
         }
+}
+
+void SecurityCamera2(){
+
+        callToNumber(999);
 }
