@@ -17,6 +17,14 @@ if __name__ == "__main__":
         sec = listaSensor[1][4:6]
         print(f'hr: {hr}, min: {min}, sec: {sec}')
 
-        listaSensor[1] = f'hr: {hr}, min: {min}, sec: {sec}'
+        latitud = listaSensor[2] + listaSensor[3]
+        print(f'Latitud: {latitud}')
+        longitud = listaSensor[4] + listaSensor[5]
+        print(f'Longitud:{longitud}')
+        
+
+
+        
+
         
 
