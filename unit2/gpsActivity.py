@@ -22,7 +22,8 @@ if __name__ == "__main__":
         longitud = listaSensor[4] + listaSensor[5]
         print(f'Longitud:{longitud}')
         
-
+        GPS = {'Header' :sensorInput[0:5], 'UTC':{'hr': listaSensor[1][:2],'min': listaSensor[1][2:4] ,'sec': listaSensor[1][4:6]}, 'Latitud':listaSensor[2] + listaSensor[3], 'Longitud': listaSensor[4] + listaSensor[5] }
+        print(GPS)
 
         
 
