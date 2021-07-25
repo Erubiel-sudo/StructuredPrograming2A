@@ -6,8 +6,7 @@ int Num_div;
 int numbers (int Num_div){
     for (Num_div = 1; Num_div <= 200; Num_div++)
     {
-        if (Num_div %3 == 0 && Num_div %5 == 0)
-        {
+        if (Num_div %3 == 0 && Num_div %5 == 0){
             printf("%d\n", Num_div);
         }
         

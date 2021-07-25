@@ -6,10 +6,10 @@
 
 int main(){
 
-    char username[255];
+    char username[50];
     int age;
 
-    printf("Hello, what's your username?\n");
+    printf("Enter your username:\n");
     scanf( "%s" , username);
 
     printf("How old are you %s?\n", username);
